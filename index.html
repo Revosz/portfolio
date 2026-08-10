@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>luker — Roblox Scripter</title>
+    <meta name="description" content="Roblox scripting portfolio — Luau systems, gameplay code, and game development." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="nav">
+        <a href="#top" class="brand">luker<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#games">games</a></li>
+            <li><a href="#videos">videos</a></li>
+            <li><a href="#skills">skills</a></li>
+        </ul>
+    </nav>
+
+    <main id="top">
+        <section class="hero">
+            <p class="eyebrow">roblox scripter · luau developer</p>
+            <h1>I build <span class="accent">gameplay systems</span><br />that scale.</h1>
+            <p class="lede">
+                Systems programming for Roblox experiences: combat, economy, data, and everything that has to
+                keep working when a thousand players hit the server at once.
+            </p>
+            <div class="cta-row">
+                <a href="#projects" class="btn btn-primary">See projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <p>
+                    I'm a Roblox developer focused on Luau scripting: server architecture, gameplay systems,
+                    and the kind of infrastructure code that never gets seen but always gets blamed when it
+                    breaks. I care about clean data flow, tight networking, and code that reads well six months
+                    later.
+                </p>
+                <p>
+                    Currently open to commissioned work and long-term collaborations on serious projects.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects">
+                <article class="card">
+                    <div class="card-tag">Combat System</div>
+                    <h3>Melee Framework</h3>
+                    <p>
+                        Server-authoritative hitbox system with client prediction, lag compensation, and a
+                        modular ability layer. Handles 40+ concurrent fights per server without frame drops.
+                    </p>
+                    <ul class="tech">
+                        <li>Luau</li><li>ProfileService</li><li>Roact</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-tag">Data</div>
+                    <h3>Persistent Economy</h3>
+                    <p>
+                        Session-locked player data with transaction rollback, cross-server trade queue, and an
+                        admin dashboard. Zero data loss across ~2M sessions logged.
+                    </p>
+                    <ul class="tech">
+                        <li>DataStore2</li><li>MessagingService</li><li>Luau</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-tag">Systems</div>
+                    <h3>Round Manager</h3>
+                    <p>
+                        Match lifecycle framework covering queueing, teleport, in-round state, and post-round
+                        rewards. Reused across three different game modes with minimal per-mode glue code.
+                    </p>
+                    <ul class="tech">
+                        <li>Luau</li><li>TeleportService</li><li>Knit</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-tag">Tooling</div>
+                    <h3>Live Ops Console</h3>
+                    <p>
+                        In-game admin panel for tuning drop rates, patching values, and triggering events
+                        without a redeploy. Backed by an external config service.
+                    </p>
+                    <ul class="tech">
+                        <li>HttpService</li><li>Fusion</li><li>Luau</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="games" class="section reveal">
+            <h2 class="section-title">Games</h2>
+            <div class="games">
+                <a class="game-card" href="https://www.roblox.com/games/130975201996641/Turret-Empire" target="_blank" rel="noopener">
+                    <div class="game-thumb"><img alt="" loading="lazy" /></div>
+                    <div class="game-meta">
+                        <div class="game-title">Loading&hellip;</div>
+                        <div class="game-stats"></div>
+                    </div>
+                </a>
+                <a class="game-card" href="https://www.roblox.com/games/78934162817711/Mini-Kingdoms" target="_blank" rel="noopener">
+                    <div class="game-thumb"><img alt="" loading="lazy" /></div>
+                    <div class="game-meta">
+                        <div class="game-title">Loading&hellip;</div>
+                        <div class="game-stats"></div>
+                    </div>
+                </a>
+                <a class="game-card" href="https://www.roblox.com/games/139887524801159/Inside-Job" target="_blank" rel="noopener">
+                    <div class="game-thumb"><img alt="" loading="lazy" /></div>
+                    <div class="game-meta">
+                        <div class="game-title">Loading&hellip;</div>
+                        <div class="game-stats"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="videos" class="section reveal">
+            <h2 class="section-title">Videos</h2>
+            <div class="videos">
+                <a class="video-card" href="https://youtu.be/rg470gpmmy8" data-video-id="rg470gpmmy8" target="_blank" rel="noopener">
+                    <div class="video-thumb">
+                        <img alt="" loading="lazy" />
+                        <span class="play" aria-hidden="true"></span>
+                    </div>
+                    <div class="video-title">Loading&hellip;</div>
+                </a>
+                <a class="video-card" href="https://www.youtube.com/watch?v=lCo29CaYKEI" data-video-id="lCo29CaYKEI" target="_blank" rel="noopener">
+                    <div class="video-thumb">
+                        <img alt="" loading="lazy" />
+                        <span class="play" aria-hidden="true"></span>
+                    </div>
+                    <div class="video-title">Loading&hellip;</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <ul><li>Luau</li><li>Lua</li><li>TypeScript (roblox-ts)</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Frameworks</h4>
+                    <ul><li>Knit</li><li>Fusion</li><li>Roact</li><li>ProfileService</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Services</h4>
+                    <ul><li>DataStore</li><li>MessagingService</li><li>MemoryStore</li><li>HttpService</li></ul>
+                </div>
+                <div class="skill-group">
+                    <h4>Practices</h4>
+                    <ul><li>Server-authoritative design</li><li>Anti-exploit</li><li>Testing</li><li>Version control</li></ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
