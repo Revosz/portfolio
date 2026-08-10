@@ -20,12 +20,11 @@ const CONTENT = {
     // ─────────────────────── NAV LINKS ───────────────────────
     // These show in the top nav. Order matters. Remove any you don't want.
     nav: [
-        { label: "about",    href: "#about" },
-        { label: "why me",   href: "#why" },
-        { label: "examples", href: "#examples" },
-        { label: "games",    href: "#games" },
-        { label: "videos",   href: "#videos" },
-        { label: "skills",   href: "#skills" }
+        { label: "about",  href: "#about" },
+        { label: "why me", href: "#why" },
+        { label: "games",  href: "#games" },
+        { label: "videos", href: "#videos" },
+        { label: "skills", href: "#skills" }
     ],
 
     // ─────────────────────── HERO (top of page) ───────────────────────
@@ -35,7 +34,7 @@ const CONTENT = {
         // Tagline. Wrap words with <span class="accent">...</span> to highlight in gold.
         tagline: 'Premium quality, Fast delivery, <span class="accent"> turning exactly what you want into reality..</span>',
         lede: "Combat, economy, data: I can get it done quickly and I can get it done right. Hire me and your game will be done in half the time you expect, with double the quality you wanted.",
-        cta: { label: "See examples", href: "#examples" }
+        cta: { label: "See games", href: "#games" }
     },
 
     // ─────────────────────── ABOUT ───────────────────────
@@ -99,37 +98,6 @@ const CONTENT = {
             { feature: "Secure unexploitable systems",   me: true, them: false },
             { feature: "Videos as I progress",           me: true, them: false },
             { feature: "Daily progress updates",         me: true, them: false }
-        ]
-    },
-
-    // ─────────────────────── EXAMPLES (formerly Projects) ───────────────────────
-    examples: {
-        title: "Examples",
-        items: [
-            {
-                tag: "Combat System",
-                title: "Melee Framework",
-                body: "Server-authoritative hitbox system with client prediction, lag compensation, and a modular ability layer. Handles 40+ concurrent fights per server without frame drops.",
-                tech: ["Luau", "ProfileService", "Roact"]
-            },
-            {
-                tag: "Data",
-                title: "Persistent Economy",
-                body: "Session-locked player data with transaction rollback, cross-server trade queue, and an admin dashboard. Zero data loss across ~2M sessions logged.",
-                tech: ["DataStore2", "MessagingService", "Luau"]
-            },
-            {
-                tag: "Systems",
-                title: "Round Manager",
-                body: "Match lifecycle framework covering queueing, teleport, in-round state, and post-round rewards. Reused across three different game modes with minimal per-mode glue code.",
-                tech: ["Luau", "TeleportService", "Knit"]
-            },
-            {
-                tag: "Tooling",
-                title: "Live Ops Console",
-                body: "In-game admin panel for tuning drop rates, patching values, and triggering events without a redeploy. Backed by an external config service.",
-                tech: ["HttpService", "Fusion", "Luau"]
-            }
         ]
     },
 

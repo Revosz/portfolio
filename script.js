@@ -100,25 +100,6 @@ document.getElementById("why").innerHTML = `
     </div>
 `;
 
-// ─── EXAMPLES ───
-document.getElementById("examples").innerHTML = `
-    <h2 class="section-title">${C.examples.title}</h2>
-    <div class="examples">
-        ${C.examples.items
-            .map(
-                (e) => `
-            <article class="card">
-                <div class="card-tag">${e.tag}</div>
-                <h3>${e.title}</h3>
-                <p>${e.body}</p>
-                <ul class="tech">${e.tech.map((t) => `<li>${t}</li>`).join("")}</ul>
-            </article>
-        `
-            )
-            .join("")}
-    </div>
-`;
-
 // ─── GAMES ───
 document.getElementById("games").innerHTML = `
     <h2 class="section-title">${C.games.title}</h2>
