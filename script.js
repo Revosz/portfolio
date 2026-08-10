@@ -1,6 +1,4 @@
-const C = window.CONTENT;
-
-if (!C) {
+if (typeof CONTENT === "undefined") {
     document.body.innerHTML = `
         <div style="max-width:640px;margin:80px auto;padding:32px;font-family:ui-sans-serif,system-ui,sans-serif;color:#fff;background:#101010;border:1px solid #f1c645;border-radius:8px;">
             <h1 style="color:#f1c645;margin:0 0 12px;font-size:1.4rem;">content.js didn't load</h1>
@@ -13,6 +11,8 @@ if (!C) {
         </div>`;
     throw new Error("CONTENT not defined — check content.js for syntax errors");
 }
+
+const C = CONTENT;
 
 // ─── META ───
 document.title = C.tabTitle;
