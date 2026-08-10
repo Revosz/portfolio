@@ -1,15 +1,15 @@
 :root {
-    --bg: #0a0a0b;
-    --bg-elev: #111114;
-    --bg-card: #131317;
-    --border: #1f1f24;
-    --border-strong: #2a2a31;
-    --text: #ececee;
-    --text-dim: #8a8a94;
-    --text-mute: #5a5a63;
-    --accent: #e5e5e7;
-    --accent-alt: #a78bfa;
-    --radius: 10px;
+    --bg: #000000;
+    --bg-elev: #0a0a0a;
+    --bg-card: #101010;
+    --border: #1e1e1e;
+    --border-strong: #2c2c2c;
+    --text: #ffffff;
+    --text-dim: #a3a3a3;
+    --text-mute: #666666;
+    --accent: #ffffff;
+    --accent-alt: #ff9000;
+    --radius: 6px;
     --maxw: 960px;
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -50,20 +50,25 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 20px 32px;
-    background: rgba(10, 10, 11, 0.75);
+    background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
 
 .brand {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.05rem;
     letter-spacing: -0.01em;
+    color: var(--text);
 }
 
 .brand .dot {
-    color: var(--accent-alt);
+    background: var(--accent-alt);
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 2px;
 }
 
 .nav-links {
@@ -135,13 +140,14 @@ h1 {
 }
 
 .btn-primary {
-    background: var(--text);
-    color: var(--bg);
+    background: var(--accent-alt);
+    color: #000;
+    font-weight: 600;
 }
 
 .btn-primary:hover {
     transform: translateY(-1px);
-    background: #fff;
+    background: #ffa733;
 }
 
 .btn-ghost {
@@ -336,9 +342,9 @@ h1 {
 }
 
 .mark.check {
-    background: rgba(167, 139, 250, 0.15);
+    background: rgba(255, 144, 0, 0.15);
     color: var(--accent-alt);
-    border: 1px solid rgba(167, 139, 250, 0.35);
+    border: 1px solid rgba(255, 144, 0, 0.4);
 }
 
 .mark.cross {
