@@ -58,9 +58,9 @@ const CONTENT = {
                 tag: "01",
                 heading: "Premium quality",
                 bullets: [
-                    "Server-authoritative by default",
-                    "Reviewed for exploit surface",
-                    "Reads well six months later"
+                    "Solid under real player load",
+                    "Locked down against exploiters",
+                    "Clean code, not spaghetti"
                 ]
             },
             {
