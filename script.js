@@ -1,5 +1,19 @@
 const C = window.CONTENT;
 
+if (!C) {
+    document.body.innerHTML = `
+        <div style="max-width:640px;margin:80px auto;padding:32px;font-family:ui-sans-serif,system-ui,sans-serif;color:#fff;background:#101010;border:1px solid #f1c645;border-radius:8px;">
+            <h1 style="color:#f1c645;margin:0 0 12px;font-size:1.4rem;">content.js didn't load</h1>
+            <p style="color:#a3a3a3;line-height:1.6;margin:0 0 12px;">The site couldn't find your content file. Common causes:</p>
+            <ul style="color:#a3a3a3;line-height:1.6;padding-left:20px;">
+                <li>Syntax error in <code style="color:#f1c645;">content.js</code> (missing comma, unclosed quote, etc.)</li>
+                <li>File was renamed, moved, or deleted</li>
+            </ul>
+            <p style="color:#a3a3a3;margin-top:16px;">Open the browser DevTools (F12) and check the Console tab for the exact error line.</p>
+        </div>`;
+    throw new Error("CONTENT not defined — check content.js for syntax errors");
+}
+
 // ─── META ───
 document.title = C.tabTitle;
 document.querySelector('meta[name="description"]').setAttribute("content", C.metaDescription);
