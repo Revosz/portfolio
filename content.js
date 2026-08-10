@@ -33,8 +33,8 @@ const CONTENT = {
         eyebrow: "roblox scripter · luau developer",
         name: "daze",
         // Tagline. Wrap words with <span class="accent">...</span> to highlight in gold.
-        tagline: 'Fast delivery. Premium quality. <span class="accent">And I actually reply.</span>',
-        lede: "Combat, economy, netcode, data: the infrastructure your game needs when a thousand players hit the server at once. Shipped on time, without the rewrites six months later.",
+        tagline: 'Premium quality, Fast delivery, <span class="accent"> turning exactly what you want into reality..</span>',
+        lede: "Combat, economy, data: I can get it done quickly and I can get it done right. Hire me and your game will be done in half the time you expect, with double the quality you wanted.",
         cta: { label: "See examples", href: "#examples" }
     },
 
