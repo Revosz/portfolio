@@ -85,21 +85,20 @@ const CONTENT = {
 
         // Four stat tiles below the traits.
         stats: [
-            { number: "<12h",   label: "Avg response" },
-            { number: "50+",    label: "Projects shipped" },
-            { number: "100%",   label: "On-time delivery" },
-            { number: "5+ yrs", label: "Luau experience" }
+            { number: "Instant", label: "Avg response" },
+            { number: "15+",     label: "Projects shipped" },
+            { number: "100%",    label: "On-time delivery" },
+            { number: "3+ yrs",  label: "Luau experience" }
         ],
 
         // Comparison table. `me: true` shows a gold check; `false` shows a muted x.
         compareHeaders: ["Feature", "Me", "Typical dev"],
         compareRows: [
-            { feature: "Response within 12 hours",       me: true, them: false },
-            { feature: "Unlimited revisions",            me: true, them: false },
-            { feature: "Anti-exploit review included",   me: true, them: false },
-            { feature: "Full documented source",         me: true, them: false },
-            { feature: "Weekly written progress updates", me: true, them: false },
-            { feature: "Post-ship support",              me: true, them: false }
+            { feature: "Practically instant replies",    me: true, them: false },
+            { feature: "Open to constant feedback",      me: true, them: false },
+            { feature: "Secure unexploitable systems",   me: true, them: false },
+            { feature: "Videos as I progress",           me: true, them: false },
+            { feature: "Daily progress updates",         me: true, them: false }
         ]
     },
 
