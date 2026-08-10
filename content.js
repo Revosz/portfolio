@@ -43,8 +43,8 @@ const CONTENT = {
         title: "About",
         // Each string in the array is a separate paragraph.
         paragraphs: [
-            "I'm a Roblox developer focused on Luau scripting: server architecture, gameplay systems, and the kind of infrastructure code that never gets seen but always gets blamed when it breaks. I care about clean data flow, tight networking, and code that reads well six months later.",
-            "Currently open to commissioned work and long-term collaborations on serious projects."
+            "I'm a Roblox scripter who works like a teammate, not a contractor. Sharp Luau code, real game design instincts, honest feedback on your ideas, and I execute your task list without needing to be chased.",
+            "Open to both short-term commissions and long-term collaborations. Any project, any timeline."
         ]
     },
 
