@@ -298,3 +298,32 @@ async function hydrateGame(card) {
 }
 
 document.querySelectorAll(".game-card").forEach(hydrateGame);
+
+// ─── CURSOR GLOW ───
+(() => {
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+    const glow = document.createElement("div");
+    glow.className = "cursor-glow";
+    document.body.appendChild(glow);
+
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+    let x = targetX;
+    let y = targetY;
+
+    document.addEventListener("mousemove", (e) => {
+        targetX = e.clientX;
+        targetY = e.clientY;
+    });
+
+    document.addEventListener("mouseleave", () => (glow.style.opacity = "0"));
+    document.addEventListener("mouseenter", () => (glow.style.opacity = "1"));
+
+    const tick = () => {
+        x += (targetX - x) * 0.18;
+        y += (targetY - y) * 0.18;
+        glow.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+        requestAnimationFrame(tick);
+    };
+    tick();
+})();

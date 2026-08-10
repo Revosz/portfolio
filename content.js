@@ -67,18 +67,18 @@ const CONTENT = {
                 tag: "02",
                 heading: "Fast delivery",
                 bullets: [
-                    "Prototypes inside 48 hours",
-                    "Milestone builds every 3 to 5 days",
-                    "No missed deadlines to date"
+                    "First playable in 48 hours",
+                    "Fresh builds every few days",
+                    "On time, every time"
                 ]
             },
             {
                 tag: "03",
                 heading: "Clear communication",
                 bullets: [
-                    "First reply under 12 hours",
-                    "Written weekly progress reports",
-                    "Screen-share debugging on request"
+                    "Replies in minutes, not hours",
+                    "Daily updates while I work",
+                    "Screen-share or video calls anytime"
                 ]
             }
         ],
