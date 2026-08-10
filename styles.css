@@ -147,7 +147,7 @@ h1.display-name .dot-gold {
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
-    background: radial-gradient(circle, rgba(241, 198, 69, 0.14) 0%, rgba(241, 198, 69, 0.06) 30%, transparent 65%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.05) 30%, transparent 65%);
     mix-blend-mode: screen;
     transform: translate(-50%, -50%);
     will-change: transform;
