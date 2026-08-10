@@ -8,7 +8,7 @@
     --text-dim: #a3a3a3;
     --text-mute: #666666;
     --accent: #ffffff;
-    --accent-alt: #d4af37;
+    --accent-alt: #f1c645;
     --radius: 6px;
     --maxw: 960px;
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -154,7 +154,7 @@ h1.display-name .dot-gold {
 
 .btn-primary:hover {
     transform: translateY(-1px);
-    background: #e6c04b;
+    background: #f7d566;
 }
 
 .btn-ghost {
@@ -349,9 +349,9 @@ h1.display-name .dot-gold {
 }
 
 .mark.check {
-    background: rgba(212, 175, 55, 0.15);
+    background: rgba(241, 198, 69, 0.15);
     color: var(--accent-alt);
-    border: 1px solid rgba(212, 175, 55, 0.4);
+    border: 1px solid rgba(241, 198, 69, 0.4);
 }
 
 .mark.cross {
